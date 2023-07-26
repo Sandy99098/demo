@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple interest</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       @keyframes borderAnimation {
+    0% { border-color: #ff0000; }
+    25% { border-color: #00ff00; }
+    50% { border-color: #0000ff; }
+    75% { border-color: #ff00ff; }
+    100% { border-color: #ff0000; }
+       }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1> SIMPLE INTEREST</h1>
+    <div class="#">
+        <h3>Principal</h3><br>
+        <input type="number" id="p">
+        <h3>Rate</h3> <br>
+        <input type="number" id="r">
+        <br>
+        <h3>Time</h3>
+        <input type="number" id="t">
+        <br>
+        <p>
+            <button onclick="calculate()" class="hover">CALCULATE SI</button>
+        </p>
+    </div>
+answ is
+    <h3 id="result"> </h3>
+</div>
+<script src="script.js">
+   
+</script>
+</body>
+</html>

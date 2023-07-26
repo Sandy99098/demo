@@ -1,0 +1,50 @@
+ /* CSS for styling the calculator container */
+ .container {
+    color: white;
+    border-radius: 5px;
+    border: 3px solid white;
+    background-color: red;
+    padding: auto;
+    margin-top: 0px;
+    text-align: center;
+    font-family: cursive;
+    animation: borderAnimation 5s linear infinite;
+    background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ff0000);
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    animation:borderAnimation 5s infinite ;
+}
+
+@keyframes borderAnimation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 400% 0%; }
+    0% { border-color: #ff0000; }
+    25% { border-color: #00ff00; }
+    50% { border-color: #0000ff; }
+    75% { border-color: #ff00ff; }
+    100% { border-color: #ff0000; }
+}
+
+/* Additional styling for the content inside the #border ID */
+#border {
+    border-style: solid;
+    border-width: 3px 3px 4px 5px; /* top right bottom left */
+    border-color: transparent;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    padding: 2px; /* Add some spacing between content and border */
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* Additional styling for the content inside #border */
+#border p {
+    margin: 0; /* Remove default margin for paragraphs inside #border */
+}
+
+/* Hover style for buttons */
+.hover:hover {
+    color: white;
+    background-color: rgb(21, 21, 190);
+}
